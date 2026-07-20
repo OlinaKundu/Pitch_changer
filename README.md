@@ -4,7 +4,7 @@ A modern, fast, and responsive client-side web application built in **Next.js (A
 
 ## Live Demo 
 
-- **Live Deployment (Vercel)**: [pitch-changer-olina.vercel.app](https://pitch-changer-olina.vercel.app/)
+- **Live Deployment (Vercel)**: [pitch-changer.vercel.app](https://pitch-changer.vercel.app/)
 
 ---
 

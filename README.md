@@ -1,15 +1,22 @@
 # Client-Side Audio Pitch Changer
 
-A modern, fast, and responsive client-side web application built in **Next.js (App Router)** that allows users to change the pitch of uploaded audio files entirely in the browser using FFmpeg WebAssembly (`@ffmpeg/ffmpeg`) and the Web Audio API. 
+A modern, fast, and responsive client-side web application built in **Next.js (App Router)** that allows users to change the pitch of uploaded audio files entirely in the browser using FFmpeg WebAssembly (`@ffmpeg/ffmpeg`) and the Web Audio API.
+
+## Live Demo 
+
+- **Live Deployment (Vercel)**: [pitch-changer-olina.vercel.app](https://pitch-changer-olina.vercel.app/)
+
+---
 
 ## Features
 
-- **100% Client-Side Processing**: No servers or backends. Your audio data stays on your device.
+- **100% Client-Side Processing**: No servers or backends. Your audio data stays entirely inside your browser context.
+- **Premium Sea-Green Workstation UI**: A responsive, full-page dashboard layout styled with a dark sea-depth background grid, custom glassmorphism cards, and floating ambient glow animations.
+- **Intro & Workspace States**: Restructures fluidly. Landing state shows feature decks and uploader; loading a file unlocks a 2-column workspace putting uploader & pitch tools on the left and visual playback & export control consoles on the right.
 - **Drag-and-Drop Uploader**: Easily drag files or use the file picker. Supports MP3, WAV, FLAC, OGG, M4A, and AAC up to 200 MB.
-- **Pitch Presets and Sliders**: Shift pitch by -12 to +12 semitones in steps of 0.5. Or use quick buttons (-12, -7, -5, 0, +5, +7, +12).
+- **Pitch Presets and Sliders**: Shift pitch by -12 to +12 semitones in steps of 0.5. Or use quick buttons (-12, -7, -5, 0, +5, +7, +12) with real-time target key signatures estimation.
 - **Synchronized Player A/B Comparison**: Instantly switch between the original and processed audio while keeping playback positions perfectly synchronized.
 - **Format Caching & Multi-Download**: Shift once, then download in either MP3 (VBR quality 2) or WAV (16-bit lossless PCM) formats. MP3 conversion happens on-demand in the browser in under 1 second.
-- **Premium Dark Theme**: Sleek, modern interface using custom CSS glassmorphism cards and smooth keyframe state transitions.
 
 ---
 
@@ -17,7 +24,7 @@ A modern, fast, and responsive client-side web application built in **Next.js (A
 
 - **Framework**: [Next.js (App Router, v16)](https://nextjs.org/)
 - **UI Logic**: [React 19](https://react.dev/) / [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS (v4)](https://tailwindcss.com/)
+- **Styling**: [Tailwind CSS (v4)](https://tailwindcss.com/) with a custom Sea Green theme
 - **Audio Processing**: [FFmpeg WASM Core (v0.12)](https://github.com/ffmpegwasm/ffmpeg.wasm)
 - **Playback Control**: Custom Web Audio state triggers mapping HTML5 Audio elements
 - **Icons**: [Lucide React](https://lucide.dev/)
